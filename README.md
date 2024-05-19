@@ -30,10 +30,9 @@ Dataset used in the project consists of two merged files:
     - bayes_average - Bayes average rating*
     - users_rated - number of users, who rated the game
 
-Models used in the project:
+*In order to prevent a new or rare game with only a few high ratings from taking the top spots in the ranking, 30 average ratings (not sure if it 5.5 or simply the current average rating on the geek) are added to every rating to form the Bayesian average. As more ratings are received, the effect of these "damper ratings" is reduced to nil.
+
+## Models used in the project:
 - Linear Regression,
 - Random Forest,
 - Support Vector Machines.
-
-
-* In order to prevent a new or rare game with only a few high ratings from taking the top spots in the ranking, 30 average ratings (not sure if it 5.5 or simply the current average rating on the geek) are added to every rating to form the Bayesian average. As more ratings are received, the effect of these "damper ratings" is reduced to nil.
